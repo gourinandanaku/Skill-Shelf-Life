@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up: Skill Shelf-Life Predictor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13b6ec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#0a1114",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top left, rgba(19, 182, 236, 0.15), transparent 40%),
+                        radial-gradient(circle at bottom right, rgba(19, 182, 236, 0.05), transparent 40%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen antialiased">
+<div class="flex min-h-screen w-full flex-col lg:flex-row">
+<div class="relative hidden w-full items-center justify-center lg:flex lg:w-1/2 hero-gradient overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-primary rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-primary rounded-full blur-[120px]"></div>
+</div>
+<div class="relative z-10 max-w-xl px-12">
+<div class="mb-8 flex items-center gap-3">
+<div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-background-dark">
+<span class="material-symbols-outlined text-3xl font-bold">query_stats</span>
+</div>
+<span class="text-2xl font-black tracking-tight text-slate-100 uppercase">SkillShelf</span>
+</div>
+<h1 class="mb-6 text-5xl font-black leading-[1.1] tracking-tight text-white lg:text-6xl">
+                    Future-Proof <br/>
+<span class="text-primary">Your Career.</span>
+</h1>
+<p class="mb-10 text-lg leading-relaxed text-slate-400">
+                    Leverage advanced AI to predict skill decay and stay ahead of the industry curve. 
+                    Monitor market trends in real-time and bridge your knowledge gaps before they widen.
+                </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-100">AI-Powered Insights</h4>
+<p class="text-sm text-slate-400 leading-normal">Deep learning models trained on 10M+ job postings.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-100">Shelf-Life Analytics</h4>
+<p class="text-sm text-slate-400 leading-normal">Identify which of your skills are at risk of becoming obsolete.</p>
+</div>
+</div>
+</div>
+<div class="mt-16 rounded-2xl bg-slate-900/50 p-6 border border-white/5 backdrop-blur-sm">
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-full border-2 border-primary/30 overflow-hidden">
+<img alt="User avatar" class="h-full w-full object-cover" data-alt="Professional headshot of a software engineer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeisIRYWLR2w501OFitonJ_TEulLcPFmlHb9-1Qct7BYSyf4aZUPLvAKRn3u-kIsp6mIe3uqP1J_Hj61Y4_isc2DhDyVZYLmM4ptSyGLN_MWxgOS4QdXsnju7IYEVZUsDnpGG-hiGlNBmBrR-vMuJrHlha4iBlQj3pa8a5a8ZVwR-HSR0ybMXTD42rs-KEKI-csDUWxQmcBobEdiXfmqlEiCnPuooA4cvWnRraEmAN_Mtdm_AynCyiKlzOWkPGGT0Gugt9MVrTkGB3"/>
+</div>
+<div>
+<p class="text-sm font-medium italic text-slate-300">"This tool gave me the push I needed to pivot into Machine Learning before my previous stack went cold."</p>
+<p class="mt-1 text-xs font-bold uppercase tracking-wider text-primary">Alex Chen — Senior Architect</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex w-full flex-1 flex-col items-center justify-center px-4 py-12 lg:w-1/2 lg:px-20">
+<div class="mb-12 flex items-center gap-3 lg:hidden">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-background-dark">
+<span class="material-symbols-outlined text-2xl font-bold">query_stats</span>
+</div>
+<span class="text-xl font-black tracking-tight text-white uppercase">SkillShelf</span>
+</div>
+<div class="glass-effect w-full max-w-[480px] rounded-2xl p-8 shadow-2xl">
+<div class="mb-8">
+<h2 class="text-3xl font-bold text-white">Create Account</h2>
+<p class="mt-2 text-slate-400">Start future-proofing your career today.</p>
+</div>
+<div class="mb-8 flex gap-1 rounded-xl bg-slate-900/50 p-1 border border-white/5">
+<button class="flex-1 rounded-lg py-2.5 text-sm font-bold text-slate-400 hover:text-white hover:bg-white/5 transition-colors">
+                        Login
+                    </button>
+<button class="flex-1 rounded-lg bg-primary py-2.5 text-sm font-bold text-background-dark shadow-sm">
+                        Sign Up
+                    </button>
+</div>
+<form class="space-y-5" onsubmit="event.preventDefault();">
+<div>
+<label class="block text-sm font-semibold text-slate-300 mb-2">Full Name</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-primary transition-colors">person</span>
+<input class="w-full rounded-xl border border-white/10 bg-slate-900/40 py-4 pl-12 pr-4 text-white placeholder:text-slate-600 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold text-slate-300 mb-2">Email Address</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-primary transition-colors">mail</span>
+<input class="w-full rounded-xl border border-white/10 bg-slate-900/40 py-4 pl-12 pr-4 text-white placeholder:text-slate-600 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all" placeholder="name@company.com" type="email"/>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="block text-sm font-semibold text-slate-300">Password</label>
+</div>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-primary transition-colors">lock</span>
+<input class="w-full rounded-xl border border-white/10 bg-slate-900/40 py-4 pl-12 pr-12 text-white placeholder:text-slate-600 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all" placeholder="At least 8 characters" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300" type="button">
+<span class="material-symbols-outlined text-xl">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 py-1">
+<input class="h-4 w-4 rounded border-white/10 bg-slate-900 text-primary focus:ring-primary" id="terms" required="" type="checkbox"/>
+<label class="text-sm text-slate-400" for="terms">I agree to receive AI-powered career updates</label>
+</div>
+<button 
+    onclick="window.location.href='p2.html'"
+    class="w-full rounded-xl bg-primary py-4 text-center text-base font-bold text-background-dark shadow-lg shadow-primary/20 hover:brightness-110 active:scale-[0.98] transition-all">
+    Create Your Account
+</button>
+</form>
+<div class="my-8 flex items-center gap-4">
+<div class="h-[1px] flex-1 bg-white/5"></div>
+<span class="text-xs font-bold uppercase tracking-widest text-slate-600">Or sign up with</span>
+<div class="h-[1px] flex-1 bg-white/5"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-slate-900/40 py-3.5 text-sm font-semibold text-white hover:bg-slate-900/60 transition-colors">
+<svg class="h-5 w-5" viewBox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z" fill="#EA4335"></path>
+</svg>
+                        Google
+                    </button>
+<button class="flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-slate-900/40 py-3.5 text-sm font-semibold text-white hover:bg-slate-900/60 transition-colors">
+<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+</svg>
+                        GitHub
+                    </button>
+</div>
+</div>
+<p class="mt-8 text-center text-sm text-slate-500">
+                By creating an account, you agree to our 
+                <a class="text-slate-300 hover:underline" href="#">Terms of Service</a> and 
+                <a class="text-slate-300 hover:underline" href="#">Privacy Policy</a>.
+            </p>
+</div>
+</div>
+
+</body></html>

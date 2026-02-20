@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Personalized Career Roadmap | Skill Shelf-Life Predictor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7f13ec",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#0a0612",
+                        "glass": "rgba(255, 255, 255, 0.03)",
+                        "glass-border": "rgba(255, 255, 255, 0.1)",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(127, 19, 236, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(127, 19, 236, 0.2);
+        }
+        .timeline-glow {
+            box-shadow: 0 0 15px rgba(127, 19, 236, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-3">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<h1 class="text-lg font-extrabold tracking-tight">Skill Shelf-Life</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="p3.html">Dashboard</a>
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="p5.html">Carrier Roadmap</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="p4.html">Skill Analysis</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="p6.html">Market Trends</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+<input class="bg-primary/10 border-none rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary w-64" placeholder="Search insights..." type="text"/>
+</div>
+<button class="p-2 hover:bg-primary/20 rounded-lg transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="size-9 rounded-full bg-gradient-to-tr from-primary to-blue-500 border-2 border-primary/30" data-alt="User profile avatar gradient"></div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 lg:px-20 py-10">
+<!-- Dashboard Header Stats -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+<div>
+<h2 class="text-4xl font-black mb-2 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">AI-Integrated Pivot Path</h2>
+<p class="text-slate-400 text-lg">Frontend Developer <span class="text-primary mx-2">→</span> AI Systems Engineer</p>
+</div>
+<div class="flex gap-4">
+<div class="glass-card rounded-xl p-4 min-w-[160px]">
+<p class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-1">Time to Pivot</p>
+<p class="text-2xl font-bold">4.5 Months</p>
+<div class="flex items-center gap-1 text-emerald-400 text-xs mt-1">
+<span class="material-symbols-outlined text-xs">trending_down</span>
+<span>Optimized by AI</span>
+</div>
+</div>
+<div class="glass-card rounded-xl p-4 min-w-[160px]">
+<p class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-1">Salary Delta</p>
+<p class="text-2xl font-bold text-primary">+$32,000</p>
+<p class="text-xs text-slate-400 mt-1">Projected Annual Increase</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Timeline Section -->
+<div class="lg:col-span-8 relative">
+<!-- Vertical Timeline Rail -->
+<div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent"></div>
+<!-- Milestone 1: Completed -->
+<div class="relative pl-16 mb-12">
+<div class="absolute left-[1.15rem] top-2 size-5 rounded-full bg-emerald-500 border-4 border-background-dark z-10"></div>
+<div class="glass-card rounded-xl p-6 opacity-60">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 mb-2 inline-block">Completed</span>
+<h3 class="text-xl font-bold">Foundation: React Server Components</h3>
+</div>
+<span class="text-sm font-medium text-slate-400">2 Weeks</span>
+</div>
+<div class="h-2 w-full bg-slate-800 rounded-full mb-4">
+<div class="h-full bg-emerald-500 rounded-full" style="width: 100%"></div>
+</div>
+<div class="flex gap-3">
+<span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">React</span>
+<span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Next.js</span>
+</div>
+</div>
+</div>
+<!-- Milestone 2: Current -->
+<div class="relative pl-16 mb-12">
+<div class="absolute left-[1.15rem] top-2 size-5 rounded-full bg-primary timeline-glow border-4 border-background-dark z-10"></div>
+<div class="glass-card rounded-xl p-8 ring-2 ring-primary/40 bg-primary/10">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-primary px-2 py-0.5 rounded bg-primary/20 mb-2 inline-block">In Progress</span>
+<h3 class="text-2xl font-bold">Mastering AI Integration &amp; LLM APIs</h3>
+</div>
+<div class="text-right">
+<span class="text-sm font-medium text-primary">Week 3 of 5</span>
+<p class="text-[10px] text-slate-500 uppercase mt-1">High Intensity</p>
+</div>
+</div>
+<p class="text-slate-300 mb-6 leading-relaxed">Focusing on integrating OpenAI and Anthropic APIs into Next.js middleware for streaming responses.</p>
+<div class="mb-6">
+<div class="flex justify-between text-xs mb-2">
+<span class="text-slate-400 uppercase font-bold tracking-tighter">Current Progress</span>
+<span class="text-primary font-bold">65%</span>
+</div>
+<div class="h-3 w-full bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full timeline-glow" style="width: 65%"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-4 rounded-lg bg-background-dark/50 border border-glass-border">
+<p class="text-xs font-bold text-slate-500 mb-3 uppercase">Recommended Resources</p>
+<ul class="space-y-3">
+<li>
+<a class="flex items-center justify-between group" href="#">
+<span class="text-sm text-slate-300 group-hover:text-primary transition-colors">Vercel AI SDK Docs</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-all">open_in_new</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between group" href="#">
+<span class="text-sm text-slate-300 group-hover:text-primary transition-colors">Prompt Engineering Guide</span>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-all">open_in_new</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="p-4 rounded-lg bg-background-dark/50 border border-glass-border">
+<p class="text-xs font-bold text-slate-500 mb-3 uppercase">Shelf-Life Alert</p>
+<div class="flex items-center gap-2 text-amber-500">
+<span class="material-symbols-outlined">warning</span>
+<span class="text-sm font-medium italic">High Demand (2-3 years)</span>
+</div>
+<p class="text-[10px] text-slate-500 mt-2">LLM wrapper skills are evolving fast. Focus on RAG architectures.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Milestone 3: Upcoming -->
+<div class="relative pl-16 mb-12">
+<div class="absolute left-[1.15rem] top-2 size-5 rounded-full bg-slate-700 border-4 border-background-dark z-10"></div>
+<div class="glass-card rounded-xl p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-slate-500 px-2 py-0.5 rounded bg-slate-800 mb-2 inline-block">Upcoming</span>
+<h3 class="text-xl font-bold">Vector Databases &amp; RAG Systems</h3>
+</div>
+<span class="text-sm font-medium text-slate-500">4 Weeks</span>
+</div>
+<div class="h-2 w-full bg-slate-800 rounded-full mb-4">
+<div class="h-full bg-primary/20 rounded-full" style="width: 0%"></div>
+</div>
+<p class="text-sm text-slate-400">Integration with Pinecone, Weaviate, and LangChain for persistent context memory.</p>
+</div>
+</div>
+</div>
+<!-- Sidebar Section -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Bridge the Gap Panel -->
+<div class="glass-card rounded-2xl p-6 border-l-4 border-l-primary sticky top-24">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary">psychology</span>
+<h3 class="text-lg font-bold">Bridge the Gap</h3>
+</div>
+<p class="text-sm text-slate-400 mb-6">You're already 40% there. Your existing frontend expertise directly translates to these AI domains:</p>
+<div class="space-y-4">
+<div class="p-4 rounded-xl bg-primary/5 border border-primary/10 flex items-start gap-4">
+<div class="size-8 rounded bg-primary/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-sm">data_object</span>
+</div>
+<div>
+<p class="text-sm font-bold">State Management</p>
+<p class="text-xs text-slate-500">Redux/Zustand knowledge helps in managing complex AI agent logic flow.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-primary/5 border border-primary/10 flex items-start gap-4">
+<div class="size-8 rounded bg-primary/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-sm">api</span>
+</div>
+<div>
+<p class="text-sm font-bold">Async Patterns</p>
+<p class="text-xs text-slate-500">Handling REST/GraphQL streams maps perfectly to LLM streaming architectures.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-primary/5 border border-primary/10 flex items-start gap-4">
+<div class="size-8 rounded bg-primary/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-sm">terminal</span>
+</div>
+<div>
+<p class="text-sm font-bold">TypeScript</p>
+<p class="text-xs text-slate-500">Strong typing is critical for structuring unpredictable AI model outputs.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-glass-border">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all">
+<span>Download Full Roadmap</span>
+<span class="material-symbols-outlined text-sm">download</span>
+</button>
+</div>
+</div>
+<!-- Ad/Resource Card -->
+<div class="rounded-2xl p-6 relative overflow-hidden bg-gradient-to-br from-indigo-900 to-primary">
+<div class="relative z-10">
+<h4 class="text-white font-black text-xl mb-2">Need a Mentor?</h4>
+<p class="text-white/70 text-sm mb-4">Connect with senior AI Engineers from top tech companies for a 1:1 roadmap review.</p>
+<button class="bg-white text-primary text-xs font-black uppercase tracking-widest px-4 py-2 rounded-lg hover:scale-105 transition-transform">Book a session</button>
+</div>
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-9xl text-white/10 select-none">rocket_launch</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="max-w-7xl mx-auto px-6 lg:px-20 py-10 border-t border-primary/10 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-slate-500 italic text-sm">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+<span>Powered by AI-Intelligence-Engine v2.4</span>
+</div>
+<div class="flex gap-8 text-xs text-slate-500 font-medium">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Data Security</a>
+<a class="hover:text-primary transition-colors" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skill Shelf-Life | AI Career Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13b6ec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#0a0f12",
+                        "surface-dark": "#162226",
+                        "risk-high": "#ef4444",
+                        "risk-medium": "#f59e0b",
+                        "risk-low": "#10b981",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(22, 34, 38, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glass-hover:hover {
+            background: rgba(22, 34, 38, 0.9);
+            border: 1px solid rgba(19, 182, 236, 0.3);
+            box-shadow: 0 0 20px rgba(19, 182, 236, 0.1);
+            transition: all 0.3s ease;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex">
+<aside class="w-72 border-r border-slate-200 dark:border-slate-800 flex flex-col h-screen sticky top-0 bg-background-light dark:bg-background-dark overflow-y-auto">
+<div class="p-6 flex flex-col h-full">
+<div class="flex items-center gap-3 mb-10">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined font-bold">query_stats</span>
+</div>
+<div>
+<h1 class="text-lg font-bold leading-tight">Skill Shelf-Life</h1>
+<p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-widest">AI Intelligence</p>
+</div>
+</div>
+<nav class="flex-1 flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/10 text-primary border border-primary/20" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="p5.html">
+<span class="material-symbols-outlined">map</span>
+<span class="font-medium">Career Roadmap</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" 
+   href="p4.html">
+
+    <span class="material-symbols-outlined">search_insights</span>
+    <span class="font-medium">Skill Analysis</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" 
+   href="p6.html">
+
+    <span class="material-symbols-outlined">insights</span>
+    <span class="font-medium">Market Trends</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Settings</span>
+</a>
+</nav>
+<div class="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-6">
+<div>
+<h3 class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-4">Trending Skills</h3>
+<ul class="space-y-3">
+<li class="flex items-center justify-between text-sm">
+<span class="text-slate-300">Prompt Eng.</span>
+<span class="text-risk-low flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-xs">trending_up</span> 24%
+                        </span>
+</li>
+<li class="flex items-center justify-between text-sm">
+<span class="text-slate-300">Next.js</span>
+<span class="text-risk-low flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-xs">trending_up</span> 18%
+                        </span>
+</li>
+<li class="flex items-center justify-between text-sm">
+<span class="text-slate-300">PyTorch</span>
+<span class="text-risk-low flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-xs">trending_up</span> 12%
+                        </span>
+</li>
+</ul>
+</div>
+<div class="p-4 rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border border-primary/10">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">bolt</span>
+<span class="text-sm font-bold">Pro Plan</span>
+</div>
+<p class="text-xs text-slate-400 mb-3">Unlimited AI deep-dives and custom roadmaps.</p>
+<button class="w-full py-2 bg-primary text-background-dark font-bold text-xs rounded-lg hover:brightness-110 transition-all">Upgrade Now</button>
+</div>
+<div class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 cursor-pointer">
+<span class="material-symbols-outlined">logout</span>
+<button onclick="signOut()" class="font-medium text-sm hover:text-red-400 transition">
+  Sign Out
+</button>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 flex flex-col overflow-y-auto">
+<header class="h-20 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-8 bg-background-light/50 dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-10">
+<div>
+<h2 class="text-xl font-bold">Welcome back, Alex</h2>
+<p class="text-sm text-slate-500">Your career longevity score is <span class="text-primary font-bold">84%</span></p>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile avatar portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdUknDnB7eSUHExmHxSz3qaWG6oUK--iRPmr1BC6TKAhLLGXJvMFTvUWsEQwkpAUuCCFjfIGQwh1_F13hNppv4XpbxvkBYHQMEzewFPS2pByLEHVXNjMtAoBBOsnsJ0AGFr0B-M4jiQBHSQ2vVXswMXutRbZ_pulvoO_wo7BXDzu1UtaLGZ24Ys6bviviF0OEqi77KSR_O50eHMl5I7RaRfEHQOV1pyDEX_MApyEY6PnCVxkQQBYqeohcNKRuCJSjb1XzwrjRSVBM9"/>
+</div>
+</div>
+</header>
+<div class="p-8 max-w-6xl w-full mx-auto">
+<section class="mb-12">
+<div class="flex flex-col gap-6 p-8 rounded-2xl glass border border-primary/20 shadow-2xl shadow-primary/5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">add_circle</span>
+<h2 class="text-lg font-bold">Analyze New Skill</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<div class="md:col-span-6">
+<label class="block text-xs font-semibold text-slate-400 uppercase tracking-widest mb-2 px-1">Skill Name</label>
+<div class="relative">
+<input id="skillInput"
+class="w-full bg-slate-900/50 border-slate-700 rounded-xl py-4 pl-12 focus:ring-primary focus:border-primary text-slate-100 placeholder:text-slate-600 transition-all"
+placeholder="e.g. React, Python, Prompt Engineering"
+type="text"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-500">search</span>
+</div>
+</div>
+<div class="md:col-span-3">
+<label class="block text-xs font-semibold text-slate-400 uppercase tracking-widest mb-2 px-1">Experience</label>
+<select id="experienceSelect"
+class="w-full bg-slate-900/50 border-slate-700 rounded-xl py-4 focus:ring-primary focus:border-primary text-slate-100 appearance-none transition-all">
+<option value="1">Less than 1 year</option>
+<option value="2">1-2 years</option>
+<option value="4">3-5 years</option>
+<option value="7">5-10 years</option>
+<option value="10">10+ years</option>
+</select>
+<option>Less than 1 year</option>
+<option>1-2 years</option>
+<option>3-5 years</option>
+<option>5-10 years</option>
+<option>10+ years</option>
+</select>
+</div>
+<div class="md:col-span-3 flex items-end">
+<button onclick="predictSkill()"
+class="w-full py-4 bg-primary text-background-dark font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined">auto_awesome</span>
+Predict Shelf-Life
+</button>
+<span class="material-symbols-outlined">auto_awesome</span>
+                            Predict Shelf-Life
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold">Recent Skill Analyses</h2>
+<button class="text-sm text-primary font-semibold flex items-center gap-1 hover:underline">
+                    View History <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="glass glass-hover p-6 rounded-2xl flex flex-col gap-5">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">React.js</h3>
+<p class="text-slate-400 text-sm">Frontend Development</p>
+</div>
+<span class="px-3 py-1 bg-risk-low/20 text-risk-low text-xs font-bold rounded-full border border-risk-low/30">LOW RISK</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-400">Estimated Shelf-Life</span>
+<span class="text-slate-100">8.2 Years</span>
+</div>
+<div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-risk-low w-[85%]"></div>
+</div>
+</div>
+<div class="flex items-center gap-4 pt-2">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border border-slate-900 bg-slate-700 flex items-center justify-center text-[10px] font-bold">JS</div>
+<div class="w-6 h-6 rounded-full border border-slate-900 bg-slate-700 flex items-center justify-center text-[10px] font-bold">TS</div>
+</div>
+<span class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Synergistic Tech</span>
+</div>
+</div>
+<div class="glass glass-hover p-6 rounded-2xl flex flex-col gap-5">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">Python</h3>
+<p class="text-slate-400 text-sm">Data Science / Backend</p>
+</div>
+<span class="px-3 py-1 bg-risk-medium/20 text-risk-medium text-xs font-bold rounded-full border border-risk-medium/30">MEDIUM RISK</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-400">Estimated Shelf-Life</span>
+<span class="text-slate-100">4.5 Years</span>
+</div>
+<div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-risk-medium w-[55%]"></div>
+</div>
+</div>
+<p class="text-[11px] text-slate-500 italic">"AI Automation is rapidly changing the syntax landscape."</p>
+</div>
+<div class="glass glass-hover p-6 rounded-2xl flex flex-col gap-5">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">jQuery</h3>
+<p class="text-slate-400 text-sm">Legacy Frontend</p>
+</div>
+<span class="px-3 py-1 bg-risk-high/20 text-risk-high text-xs font-bold rounded-full border border-risk-high/30">HIGH RISK</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-400">Estimated Shelf-Life</span>
+<span class="text-slate-100">1.2 Years</span>
+</div>
+<div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-risk-high w-[15%]"></div>
+</div>
+</div>
+<button class="w-full py-2 border border-primary/30 text-primary text-xs font-bold rounded-lg hover:bg-primary/10 transition-colors">Find Pivot Roadmap</button>
+</div>
+<div class="glass glass-hover p-6 rounded-2xl flex flex-col gap-5">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">TypeScript</h3>
+<p class="text-slate-400 text-sm">Scalable Frontend</p>
+</div>
+<span class="px-3 py-1 bg-risk-low/20 text-risk-low text-xs font-bold rounded-full border border-risk-low/30">LOW RISK</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-400">Estimated Shelf-Life</span>
+<span class="text-slate-100">9.5 Years</span>
+</div>
+<div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-risk-low w-[95%]"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-risk-low text-[10px] font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined text-xs">verified</span> Standard Adoption
+                    </div>
+</div>
+<div class="glass glass-hover p-6 rounded-2xl flex flex-col gap-5">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">LLM Orchestration</h3>
+<p class="text-slate-400 text-sm">AI Systems</p>
+</div>
+<span class="px-3 py-1 bg-risk-low/20 text-risk-low text-xs font-bold rounded-full border border-risk-low/30">LOW RISK</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-400">Estimated Shelf-Life</span>
+<span class="text-slate-100">7.8 Years</span>
+</div>
+<div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-risk-low w-[78%]"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-primary text-[10px] font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined text-xs">trending_up</span> Emerging Peak
+                    </div>
+</div>
+<div class="glass glass-hover p-6 rounded-2xl flex flex-col gap-5">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">Docker</h3>
+<p class="text-slate-400 text-sm">DevOps / Infra</p>
+</div>
+<span class="px-3 py-1 bg-risk-medium/20 text-risk-medium text-xs font-bold rounded-full border border-risk-medium/30">MEDIUM RISK</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-400">Estimated Shelf-Life</span>
+<span class="text-slate-100">5.2 Years</span>
+</div>
+<div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-risk-medium w-[62%]"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+                         Market Saturation
+                    </div>
+</div>
+</div>
+</section>
+</div>
+<div class="fixed bottom-8 right-8">
+<button class="w-14 h-14 bg-primary text-background-dark rounded-full shadow-2xl shadow-primary/40 flex items-center justify-center hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined font-bold">smart_toy</span>
+</button>
+</div>
+</main>
+<script>
+function predictSkill() {
+    const skill = document.getElementById("skillInput").value.trim();
+    const experience = parseInt(document.getElementById("experienceSelect").value);
+
+    if (!skill) {
+        alert("Please enter a skill name");
+        return;
+    }
+
+    let baseYears = 4;
+    let demandBoost = Math.random() * 3; 
+    let shelfLife = baseYears + experience * 0.8 + demandBoost;
+
+    let risk;
+    let riskColor;
+
+    if (shelfLife >= 8) {
+        risk = "LOW";
+        riskColor = "risk-low";
+    } else if (shelfLife >= 5) {
+        risk = "MEDIUM";
+        riskColor = "risk-medium";
+    } else {
+        risk = "HIGH";
+        riskColor = "risk-high";
+    }
+
+    localStorage.setItem("skillName", skill);
+    localStorage.setItem("experience", experience);
+    localStorage.setItem("shelfLife", shelfLife.toFixed(1));
+    localStorage.setItem("riskLevel", risk);
+    localStorage.setItem("riskColor", riskColor);
+
+    window.location.href = "p4.html";
+}
+</script><script>
+function signOut() {
+    // Optional: clear stored data
+    localStorage.clear();
+
+    // Redirect to p1.html
+    window.location.href = "p1.html";
+}
+</script>
+</body></html>

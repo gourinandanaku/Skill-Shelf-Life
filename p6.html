@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Global Market Trends Insights - Skill Shelf-Life Predictor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13b6ec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#101d22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(19, 182, 236, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(19, 182, 236, 0.2);
+        }
+        .ticker-wrap {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between border-b border-primary/20 px-6 py-4 sticky top-0 bg-background-dark/80 backdrop-blur-md z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">analytics</span>
+<h2 class="text-xl font-bold tracking-tight">Skill Shelf-Life</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-400 hover:text-primary text-sm font-medium transition-colors" href="p3.html">Dashboard</a>
+<a class="text-primary text-sm font-medium border-b-2 border-primary pb-1" href="p6.html">Market Trends</a>
+<a class="text-slate-400 hover:text-primary text-sm font-medium transition-colors" href="p4.html">Skill Analysis</a>
+<a class="text-slate-400 hover:text-primary text-sm font-medium transition-colors" href="p5.html">Carrier Roadmap</a>
+</nav>
+</div>
+<div class="flex items-center gap-4 flex-1 justify-end max-w-2xl">
+<div class="relative w-full max-w-xs">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+<input class="w-full bg-primary/10 border border-primary/20 rounded-lg py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-primary text-slate-100 placeholder:text-slate-500" placeholder="Search skills or markets..." type="text"/>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="h-8 w-[1px] bg-primary/20 mx-1"></div>
+<div class="flex items-center gap-3 bg-primary/10 rounded-full pl-1 pr-3 py-1 border border-primary/20 cursor-pointer hover:bg-primary/20 transition-colors">
+<img alt="Profile" class="h-7 w-7 rounded-full" data-alt="User profile avatar circle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLpYUYWsMfjQh_OwHoBRRHOLnAp5Jd5e7To62njpUs2JKxVxr6NnLXq9A0vTQ-vDiuyDxP1kEHpjQRUVCWsZvgb6KrhQbcjkZt2UOjaoJOGebQo6Ouu7lKHQM6vXrf-AWUSUV5sruIp4A3lVs5hGfX349ktg0SZotDLc172jvHqPRvA9Mahpx4lLFfw3sG2XZdKQH6KIVeIn9xx1MvSaytAcH-wDPW2JVGPxMMrmi1OM_PQkuGCJ4zcRLfBIZDWoT3u9_PS1QhoorA"/>
+<span class="text-xs font-semibold">Alex Rivera</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Skill Value Ticker -->
+<div class="bg-primary/5 border-b border-primary/10 py-2 ticker-wrap">
+<div class="ticker-content flex gap-12 items-center">
+<div class="flex items-center gap-2">
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">Generative AI</span>
+<span class="text-slate-100 font-mono font-bold">$142.50</span>
+<span class="text-emerald-400 text-xs flex items-center"><span class="material-symbols-outlined text-sm">trending_up</span>+12.4%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">Quantum Computing</span>
+<span class="text-slate-100 font-mono font-bold">$89.20</span>
+<span class="text-emerald-400 text-xs flex items-center"><span class="material-symbols-outlined text-sm">trending_up</span>+5.2%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">Rust Programming</span>
+<span class="text-slate-100 font-mono font-bold">$115.75</span>
+<span class="text-rose-400 text-xs flex items-center"><span class="material-symbols-outlined text-sm">trending_down</span>-1.2%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">Cloud Security</span>
+<span class="text-slate-100 font-mono font-bold">$167.40</span>
+<span class="text-emerald-400 text-xs flex items-center"><span class="material-symbols-outlined text-sm">trending_up</span>+8.9%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">Web3 Architecture</span>
+<span class="text-slate-100 font-mono font-bold">$74.15</span>
+<span class="text-rose-400 text-xs flex items-center"><span class="material-symbols-outlined text-sm">trending_down</span>-4.7%</span>
+</div>
+<!-- Duplicate for seamless loop -->
+<div class="flex items-center gap-2">
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">Generative AI</span>
+<span class="text-slate-100 font-mono font-bold">$142.50</span>
+<span class="text-emerald-400 text-xs flex items-center"><span class="material-symbols-outlined text-sm">trending_up</span>+12.4%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-slate-400 text-xs font-bold uppercase tracking-widest">Quantum Computing</span>
+<span class="text-slate-100 font-mono font-bold">$89.20</span>
+<span class="text-emerald-400 text-xs flex items-center"><span class="material-symbols-outlined text-sm">trending_up</span>+5.2%</span>
+</div>
+</div>
+</div>
+<main class="p-6 max-w-7xl mx-auto w-full space-y-6">
+<!-- Filter & Title Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h1 class="text-3xl font-bold tracking-tight text-slate-100">Market Intelligence Hub</h1>
+<p class="text-slate-400 mt-1">Real-time skill volatility and demand mapping across global markets.</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex flex-col gap-1">
+<label class="text-[10px] uppercase tracking-wider text-slate-500 font-bold ml-1">Region</label>
+<select class="bg-primary/10 border border-primary/20 rounded-lg px-4 py-2 text-sm text-slate-100 focus:ring-primary focus:border-primary min-w-[160px]">
+<option value="global">Global Markets</option>
+<option value="usa">United States</option>
+<option value="india">India</option>
+<option value="europe">European Union</option>
+<option value="apac">Asia Pacific</option>
+</select>
+</div>
+<button class="bg-primary text-slate-900 font-bold px-6 py-2 rounded-lg flex items-center gap-2 hover:bg-primary/90 transition-all self-end h-[42px]">
+<span class="material-symbols-outlined text-lg">download</span>
+                        Export Report
+                    </button>
+</div>
+</div>
+<!-- Dashboard Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="glass-card p-5 rounded-xl">
+<div class="flex justify-between items-start mb-2">
+<span class="text-slate-400 text-sm font-medium">Volatility Index</span>
+<span class="material-symbols-outlined text-primary">show_chart</span>
+</div>
+<div class="flex items-baseline gap-2">
+<h3 class="text-2xl font-bold text-slate-100">74.2</h3>
+<span class="text-rose-400 text-xs font-bold font-mono">+12.4%</span>
+</div>
+<p class="text-slate-500 text-xs mt-1">High risk of skill displacement</p>
+</div>
+<div class="glass-card p-5 rounded-xl">
+<div class="flex justify-between items-start mb-2">
+<span class="text-slate-400 text-sm font-medium">Avg. Skill Half-Life</span>
+<span class="material-symbols-outlined text-primary">hourglass_empty</span>
+</div>
+<div class="flex items-baseline gap-2">
+<h3 class="text-2xl font-bold text-slate-100">2.4 Yrs</h3>
+<span class="text-rose-400 text-xs font-bold font-mono">-0.4%</span>
+</div>
+<p class="text-slate-500 text-xs mt-1">Accelerated obsolescence rate</p>
+</div>
+<div class="glass-card p-5 rounded-xl">
+<div class="flex justify-between items-start mb-2">
+<span class="text-slate-400 text-sm font-medium">Active Demand</span>
+<span class="material-symbols-outlined text-primary">work</span>
+</div>
+<div class="flex items-baseline gap-2">
+<h3 class="text-2xl font-bold text-slate-100">1.2M+</h3>
+<span class="text-emerald-400 text-xs font-bold font-mono">+5.2%</span>
+</div>
+<p class="text-slate-500 text-xs mt-1">New roles requiring AI skills</p>
+</div>
+<div class="glass-card p-5 rounded-xl border-emerald-500/20 bg-emerald-500/5">
+<div class="flex justify-between items-start mb-2">
+<span class="text-slate-400 text-sm font-medium">Market Sentiment</span>
+<span class="material-symbols-outlined text-emerald-400">sentiment_satisfied</span>
+</div>
+<div class="flex items-baseline gap-2">
+<h3 class="text-2xl font-bold text-emerald-400">Bullish</h3>
+</div>
+<p class="text-slate-500 text-xs mt-1">Upskilling investments increasing</p>
+</div>
+</div>
+<!-- Main Data Grid -->
+<div class="grid grid-cols-12 gap-6">
+<!-- Heat Map Section -->
+<div class="col-span-12 lg:col-span-8 glass-card rounded-xl p-6 overflow-hidden">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h3 class="text-lg font-bold text-slate-100">Regional Skill Demand Map</h3>
+<p class="text-xs text-slate-500">Geographic intensity of technical skill requirements</p>
+</div>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-primary/20 rounded-full text-[10px] font-bold text-primary uppercase border border-primary/30">Live Data</span>
+</div>
+</div>
+<div class="relative w-full aspect-[21/9] bg-primary/5 rounded-lg border border-primary/10 flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 opacity-40 bg-[url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg')] bg-contain bg-no-repeat bg-center invert filter brightness-200" data-location="world" style=""></div>
+<!-- Heatmap Hotspots -->
+<div class="absolute top-[35%] left-[20%] w-24 h-24 bg-primary/30 rounded-full blur-3xl animate-pulse"></div>
+<div class="absolute top-[45%] left-[75%] w-32 h-32 bg-primary/40 rounded-full blur-3xl"></div>
+<div class="absolute top-[30%] left-[82%] w-16 h-16 bg-primary/20 rounded-full blur-2xl"></div>
+<!-- Tooltip Mockup -->
+<div class="absolute top-[40%] left-[70%] glass-card p-3 rounded-lg shadow-2xl border border-primary/50 transform -translate-y-full">
+<p class="text-[10px] font-bold text-primary uppercase">Region: APAC (India)</p>
+<p class="text-sm font-bold text-slate-100">GenAI Demand: High</p>
+<p class="text-[10px] text-slate-400">42,000 Open Positions</p>
+</div>
+<!-- Legend -->
+<div class="absolute bottom-4 left-4 flex items-center gap-3 glass-card px-4 py-2 rounded-lg border-white/5">
+<span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Intensity</span>
+<div class="w-32 h-2 bg-gradient-to-r from-primary/10 via-primary/50 to-primary rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Leaderboard Section -->
+<div class="col-span-12 lg:col-span-4 glass-card rounded-xl p-6">
+<h3 class="text-lg font-bold text-slate-100 mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">military_tech</span>
+                        Top Emerging Skills
+                    </h3>
+<div class="space-y-5">
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-200">Generative AI Engineering</span>
+<span class="text-emerald-400">+142%</span>
+</div>
+<div class="w-full bg-primary/10 rounded-full h-1.5 overflow-hidden border border-primary/10">
+<div class="bg-primary h-full rounded-full" style="width: 95%"></div>
+</div>
+<div class="flex justify-between text-[10px] text-slate-500">
+<span>Shelf-Life: 8 Months</span>
+<span>High Volatility</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-200">LLM Fine-tuning</span>
+<span class="text-emerald-400">+88%</span>
+</div>
+<div class="w-full bg-primary/10 rounded-full h-1.5 overflow-hidden border border-primary/10">
+<div class="bg-primary h-full rounded-full" style="width: 82%"></div>
+</div>
+<div class="flex justify-between text-[10px] text-slate-500">
+<span>Shelf-Life: 1.2 Years</span>
+<span>Moderate</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-200">Cyber Resilience</span>
+<span class="text-emerald-400">+64%</span>
+</div>
+<div class="w-full bg-primary/10 rounded-full h-1.5 overflow-hidden border border-primary/10">
+<div class="bg-primary h-full rounded-full" style="width: 74%"></div>
+</div>
+<div class="flex justify-between text-[10px] text-slate-500">
+<span>Shelf-Life: 3.5 Years</span>
+<span>Stable</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-medium">
+<span class="text-slate-200">Prompt Engineering</span>
+<span class="text-rose-400">-12%</span>
+</div>
+<div class="w-full bg-primary/10 rounded-full h-1.5 overflow-hidden border border-primary/10">
+<div class="bg-primary/40 h-full rounded-full" style="width: 45%"></div>
+</div>
+<div class="flex justify-between text-[10px] text-slate-500">
+<span>Shelf-Life: 4 Months</span>
+<span>Critical Decay</span>
+</div>
+</div>
+<button class="w-full py-3 mt-2 text-xs font-bold text-primary bg-primary/10 rounded-lg hover:bg-primary/20 transition-all uppercase tracking-widest border border-primary/20">
+                            View Full Leaderboard (100+)
+                        </button>
+</div>
+</div>
+<!-- Job Market Volatility Chart -->
+<div class="col-span-12 glass-card rounded-xl p-6">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+<div>
+<h3 class="text-lg font-bold text-slate-100">Job Market Volatility Analysis</h3>
+<p class="text-xs text-slate-500">Correlation between new skill emergence and legacy role displacement</p>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-xs text-slate-400">Skill Growth</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-rose-500"></span>
+<span class="text-xs text-slate-400">Obsolescence</span>
+</div>
+</div>
+</div>
+<div class="h-64 w-full relative">
+<!-- Chart Mockup with Grids -->
+<div class="absolute inset-0 flex flex-col justify-between opacity-10 pointer-events-none">
+<div class="w-full border-t border-slate-300"></div>
+<div class="w-full border-t border-slate-300"></div>
+<div class="w-full border-t border-slate-300"></div>
+<div class="w-full border-t border-slate-300"></div>
+<div class="w-full border-t border-slate-300"></div>
+</div>
+<!-- SVG Line Chart -->
+<svg class="w-full h-full drop-shadow-[0_0_15px_rgba(19,182,236,0.3)]" preserveaspectratio="none" viewbox="0 0 1000 200">
+<!-- Growth Line -->
+<path d="M0,180 Q100,160 200,120 T400,100 T600,60 T800,40 L1000,10" fill="none" stroke="#13b6ec" stroke-linecap="round" stroke-width="4"></path>
+<!-- Decay Line -->
+<path d="M0,20 Q100,30 200,60 T400,90 T600,130 T800,160 L1000,190" fill="none" stroke="#f43f5e" stroke-dasharray="8 4" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+<!-- X-Axis Labels -->
+<div class="flex justify-between mt-4 text-[10px] text-slate-500 font-bold uppercase tracking-widest px-2">
+<span>Q1 2024</span>
+<span>Q2 2024</span>
+<span>Q3 2024</span>
+<span>Q4 2024</span>
+<span>Q1 2025 (Proj)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Meta Info -->
+<div class="flex flex-col md:flex-row justify-between items-center py-6 border-t border-primary/10 gap-4">
+<div class="flex items-center gap-6">
+<p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Data Precision: 99.4%</p>
+<p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Last Sync: 42 seconds ago</p>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-[10px] text-primary font-bold uppercase tracking-widest hover:underline" href="#">API Documentation</a>
+<a class="text-[10px] text-slate-500 font-bold uppercase tracking-widest hover:text-slate-300" href="#">Privacy Protocol</a>
+</div>
+</div>
+</main>
+</div>
+</body></html>
